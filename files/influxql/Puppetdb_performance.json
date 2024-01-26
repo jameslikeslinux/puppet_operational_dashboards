@@ -145,7 +145,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -197,7 +197,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -249,7 +249,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -675,7 +675,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -733,7 +733,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -791,7 +791,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -849,7 +849,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1006,7 +1006,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1058,7 +1058,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1210,7 +1210,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1262,7 +1262,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1398,7 +1398,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1539,7 +1539,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1680,7 +1680,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1811,7 +1811,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -1948,7 +1948,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -2085,7 +2085,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -2222,7 +2222,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -2359,7 +2359,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -2496,7 +2496,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -2633,7 +2633,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -2770,7 +2770,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -2907,7 +2907,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -3056,7 +3056,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -3206,7 +3206,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -3355,7 +3355,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -3504,7 +3504,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -3653,7 +3653,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -3802,7 +3802,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -3955,7 +3955,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },
@@ -4098,7 +4098,7 @@
           "groupBy": [
             {
               "params": [
-                "$Group_by_time"
+                "5m"
               ],
               "type": "time"
             },

@@ -152,7 +152,7 @@ class puppet_operational_dashboards::profile::dashboards (
       ensure    => file,
       path      => '/etc/systemd/system/grafana-server.service.d/wait.conf',
       subscribe => Exec['puppet_grafana_daemon_reload'],
-      content   => epp('puppet_operational_dashboards/grafana_wait.epp', { timeout => $grafana_timeout, port => $grafana_port }),
+      content   => epp('puppet_operational_dashboards/influxql/grafana_wait.epp', { timeout => $grafana_timeout, port => $grafana_port }),
     }
 
     exec { 'puppet_grafana_daemon_reload':
@@ -173,7 +173,7 @@ class puppet_operational_dashboards::profile::dashboards (
         path    => $provisioning_datasource_file,
         mode    => '0600',
         owner   => 'grafana',
-        content => inline_epp(file('puppet_operational_dashboards/datasource.epp'), {
+        content => inline_epp(file('puppet_operational_dashboards/influxql/datasource.epp'), {
             name     => $grafana_datasource,
             token    => $token,
             database => $influxdb_bucket,
@@ -198,7 +198,7 @@ class puppet_operational_dashboards::profile::dashboards (
         mode    => '0600',
         owner   => 'grafana',
         content => Deferred('inline_epp',
-        [file('puppet_operational_dashboards/datasource.epp'), $token_vars]),
+        [file('puppet_operational_dashboards/influxql/datasource.epp'), $token_vars]),
         require => Class['grafana::install'],
         notify  => Service['grafana-server'],
       }
@@ -210,7 +210,7 @@ class puppet_operational_dashboards::profile::dashboards (
       grafana_user     => 'admin',
       grafana_password => $grafana_password.unwrap,
       grafana_url      => $grafana_url,
-      content          => file("puppet_operational_dashboards/${service}_performance.json"),
+      content          => file("puppet_operational_dashboards/influxql/${service}_performance.json"),
     }
   }
 
@@ -243,7 +243,7 @@ class puppet_operational_dashboards::profile::dashboards (
         grafana_user     => 'admin',
         grafana_password => $grafana_password.unwrap,
         grafana_url      => $grafana_url,
-        content          => file("puppet_operational_dashboards/${board}_performance.json"),
+        content          => file("puppet_operational_dashboards/influxql/${board}_performance.json"),
       }
     }
   }
@@ -254,7 +254,7 @@ class puppet_operational_dashboards::profile::dashboards (
         grafana_user     => 'admin',
         grafana_password => $grafana_password.unwrap,
         grafana_url      => $grafana_url,
-        content          => file("puppet_operational_dashboards/${pe_service}_performance.json"),
+        content          => file("puppet_operational_dashboards/influxql/${pe_service}_performance.json"),
       }
     }
   }

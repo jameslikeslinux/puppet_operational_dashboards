@@ -3,6 +3,9 @@ name: puppet_operational_dashboards
 modules:
 - name: puppetlabs-stdlib
 - name: puppetlabs-influxdb
-- name: puppet-grafana
+- name: grafana
+  git: https://github.com/jameslikeslinux/puppet-grafana.git
+  ref: feature_api_tokens
+  resolve: false
 - name: puppet-telegraf
 - name: puppetlabs-apt
